@@ -25,6 +25,7 @@ group :assets do
   gem 'sass-rails',   '>= 3.2.6'
   gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass', '~> 2.0.3.1'
 end
 
 gem 'thin'
@@ -35,3 +36,4 @@ gem 'backbone-on-rails'
 gem 'figaro'
 gem 'httparty'
 gem 'public_activity'
+gem 'amazon-ecs'
