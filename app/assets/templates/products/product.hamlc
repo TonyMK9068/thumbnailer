@@ -1,0 +1,11 @@
+.panel.panel-primary
+  .panel-heading=@product.get('name')
+  .panel-body
+    %p 
+      Asin
+      %span=@product.get('product_number')
+    %p
+      Category
+      %span=@product.get('category')
+    %p 
+      %button.btn.btn-lg#show-product Link

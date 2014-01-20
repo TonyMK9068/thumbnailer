@@ -1,0 +1,18 @@
+#js-show-product.modal.fade{"aria-labelledby" => "js-product", role: "dialog", tabindex: "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"data-dismiss" => "modal", type: "button"} ×
+        %h4#js-product.modal-title=@item.get('name')
+      .modal-body     
+        %p
+          ASIN
+          %span=@item.get('product_number')
+        %p
+          Category
+          %span=@item.get('category')
+        %p
+          Link
+    .modal-footer
+      %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
+      %button.btn.btn-primary#show-next-item{type: "button"} Next product

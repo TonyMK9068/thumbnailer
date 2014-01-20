@@ -1,7 +1,6 @@
-Entry.create!(name: "Matz")
-Entry.create!(name: "Yehuda Katz")
-Entry.create!(name: "DHH")
-Entry.create!(name: "Jose Valim")
-Entry.create!(name: "Dr Nic")
-Entry.create!(name: "John Nunemaker")
-Entry.create!(name: "Aaron Patterson")
+Product.featured('wide screen', 'electronics').first(20).each do |p|
+  p = Product.new(product_number: p[:id], name: p[:title], link: p[:link], category: p[:category], store: 'Amazon')
+  p.save!
+end
+
+p 'Products saved'

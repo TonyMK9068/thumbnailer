@@ -4,8 +4,9 @@ window.Thumbnailer =
   Views: {}
   Routers: {}
   initialize: ->
-    new Thumbnailer.Routers.Entries()
-    Backbone.history.start()
+    new Thumbnailer.Routers.Products()
+    Backbone.history.start(pushState: true)
+    
 
 $(document).ready ->
   Thumbnailer.initialize()
